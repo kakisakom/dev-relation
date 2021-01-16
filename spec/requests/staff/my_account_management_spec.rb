@@ -1,10 +1,14 @@
 require "rails_helper"
 
+describe "職員による自分のアカウントの管理", "ログイン前" do
+  include_examples "a protected singular staff controller", "staff/accounts"
+end
+
 describe "職員による自分のアカウントの管理" do
   before do
     post staff_session_url,
     params:{
-      staff_login_form:{
+      staff_login_form: {
         email: staff_member.email,
         password: "pw"
       }
