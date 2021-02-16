@@ -13,7 +13,7 @@ class Phone < ApplicationRecord
     self.customer = address.customer if address
   end
 
-  #validates :number, presence: true,
-    #format: { with: /\A\+?\d+(-\d+)*\z/, allow_blank: true }
+  validates :number, presence: true,
+    format: { with: /\A\+?\d+(-\d+)*\z/, allow_blank: true }
 end
 
