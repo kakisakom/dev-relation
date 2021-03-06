@@ -9,4 +9,4 @@ class Admin::StaffEventsController < Admin::Base
     @events =
       @events.order(occurred_at: :desc).includes(:member).page(params[:page])
   end
-endrspec
+end
