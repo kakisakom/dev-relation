@@ -8,7 +8,7 @@ FactoryBot.define do
   end
 
   factory :work_address do
-    campany_name { "テスt" }
+    company_name { "テスト" }
     division_name { "開発部" }
     postal_code { "1050000" }
     prefecture { "東京都" }
