@@ -15,7 +15,7 @@ shared_examples "a protected staff controller" do |controller|
 
   describe "#show" do
     example "ログインフォームにリダイレクト" do
-      get url_for(args.merge(action: :show, id:1))
+      get url_for(args.merge(action: :show, id: 1))
       expect(response).to redirect_to(staff_login_url)
     end
   end

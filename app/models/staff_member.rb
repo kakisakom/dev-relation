@@ -1,5 +1,5 @@
 class StaffMember < ApplicationRecord
-  #include EmailHolder
+  include EmailHolder
   include PersonalNameHolder
   include PasswordHolder
   

@@ -77,7 +77,7 @@ class Staff::CustomerForm
   end
 
   private def customer_params
-    @params.require(:customer).expect(:phones).permit(
+    @params.require(:customer).except(:phones).permit(
       :email, :password,
       :family_name, :given_name, :family_name_kana, :given_name_kana,
       :birthday, :gender
@@ -91,7 +91,7 @@ class Staff::CustomerForm
   end
   
   private def work_address_params
-    @params.require(:work_address).expect(:phone).permit(
+    @params.require(:work_address).except(:phones).permit(
       :postal_code, :prefecture, :city, :address1, :address2,
       :company_name, :division_name
     )
