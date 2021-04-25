@@ -30,7 +30,6 @@ group :development do
   gem "listen", "~> 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
-  gem "splite3"
 end
 
 group :test do
@@ -39,5 +38,4 @@ group :test do
   gem "webdrivers"
   gem "rspec-rails"
   gem "factory_bot_rails"
-  gem "pg"
 end
