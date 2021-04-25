@@ -18,7 +18,8 @@ class Staff::SessionsController < Staff::Base
     end
     if Staff::Authenticator.new(staff_member).authenticate(@form.password)
       if staff_member.suspended?
-        staff_member.events.create!(type: "rejected") #staff_eventsにログイン状態を書き込む
+        staff_member.events.
+        create!(type: "rejected") #staff_eventsにログイン状態を書き込む
         flash.now.alert = " アカウントが停止されています。"
         render action: "new"
       else
