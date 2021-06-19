@@ -112,5 +112,5 @@ Rails.application.configure do
 
   # heroku用に許可ホストを入れた
   #config.hosts << "tranquil-brook-95633.herokuapp.com"
-  config.hosts << "dev-relation3.herokuapp.com"
+  #config.hosts << "dev-relation3.herokuapp.com"
 end
