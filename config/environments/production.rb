@@ -111,5 +111,5 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   # heroku用に許可ホストを入れた
-  config.hosts << "dev-relation0619.herokuapp.com
+  config.hosts << "dev-relation0619.herokuapp.com"
 end

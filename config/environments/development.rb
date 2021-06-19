@@ -63,6 +63,6 @@ Rails.application.configure do
 
   config.web_console.whitelisted_ips = ["172.16.0.0/12"]
   # heroku用に許可ホストを入れた
-  config.hosts << "dev-relation0619.herokuapp.com
+  config.hosts << "dev-relation0619.herokuapp.com"
  
 end
