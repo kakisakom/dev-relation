@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-	#config = Rails.application.config.baukis2
+	# config = Rails.application.config.baukis2
 
-	#constraints host: config[:staff][:host] do
-		namespace:staff, path: config[:staff][:path] do
+	# constraints host: config[:staff][:host] do
+		namespace:staff, path: "" do
 	   root "top#index"
 		 get "login" => "sessions#new", as: :login
 		 resource :session, only: [:create, :destroy]
@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 		 resource :password, only: [ :show, :edit, :update ]
 		 resources :customers
 	 end
-	#end
+	# end
 	
-	#constraints host: config[:admin][:host] do
-		namespace:admin, path: config[:admin][:path] do
+	# constraints host: config[:admin][:host] do
+		namespace:admin, path: "admin" do
 			root "top#index"
 			get "login" => "sessions#new", as: :login
 			resource :session, only: [:create, :destroy]
@@ -22,13 +22,13 @@ Rails.application.routes.draw do
 			end
 			resources :staff_events, only: [ :index]
 		end
-	#end
+	# end
 	
-	#constraints host: config[:customer][:host] do
-		namespace:customer, path: config[:customer][:path] do
+	# constraints host: config[:customer][:host] do
+		namespace:customer, path: "mypage" do
 		 root "top#index"
 		 get "login" => "sessions#new", as: :login
 		 resource :session, only: [:create, :destroy]
 		end
-  #end
+#   end
 end
