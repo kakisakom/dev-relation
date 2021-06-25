@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 			end
 			resources :staff_events, only: [ :index]
 		end
-	end
+	#end
 	
 	#constraints host: config[:customer][:host] do
 		namespace:customer, path: config[:customer][:path] do
